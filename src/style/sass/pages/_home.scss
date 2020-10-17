@@ -1,0 +1,20 @@
+// helpers
+@import "../helpers/variables";
+@import "../helpers/functions";
+@import "../helpers/mixins";
+
+//! layout
+@import "../layout/nav";
+
+//* Start actualPage
+
+canvas {
+  margin: 10px auto 0;
+  display: block;
+  cursor: crosshair;
+}
+
+//* End actualPage
+
+//! layout
+@import "../layout/footer";

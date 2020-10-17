@@ -1,0 +1,52 @@
+input {
+  width: 100%;
+  border: 1px solid $gray;
+  height: 40px;
+  border-radius: $radius;
+  transition: border 0.3s ease-in;
+  outline: none;
+  padding: 0 10px;
+
+  &:focus {
+    border-color: $blue;
+  }
+
+  &[type="number"] {
+    max-width: 100px;
+
+    /* Firefox */
+    -moz-appearance: textfield;
+
+    /* Chrome, Safari, Edge, Opera */
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &[type="file"] {
+    border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    opacity: 0;
+  }
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid $gray;
+  min-height: 80px;
+  max-height: 160px;
+  border-radius: $radius;
+  transition: border 0.3s ease-in;
+  outline: none;
+  padding: 10px;
+  resize: vertical;
+
+  &:focus {
+    border-color: $blue;
+  }
+}

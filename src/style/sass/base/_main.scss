@@ -1,0 +1,61 @@
+@import "../helpers/variables";
+@import "../helpers/functions";
+@import "../helpers/mixins";
+
+* {
+  @include reset;
+
+  &::before {
+    @include reset;
+  }
+
+  &::after {
+    @include reset;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $mainTextColor;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+html,
+body {
+  @include reset;
+  @include body;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.disabled {
+  background-color: $grayedOut !important;
+  cursor: not-allowed;
+}

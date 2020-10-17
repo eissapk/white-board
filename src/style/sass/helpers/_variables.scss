@@ -1,0 +1,39 @@
+// lan
+$direction: "en";
+$floatLeft: left;
+$floatRight: right;
+$textLeft: left;
+$textRight: right;
+
+// *colors
+
+// generic
+$white: #fff;
+$borderColor: #ccc;
+$gray: #f1f3f4;
+
+// text
+$textColor: #333;
+$mainTextColor: #2e3b55;
+$subTextColor: #777f8f;
+
+// bg
+$blue: #417ff5;
+$lightBlue: lighten($blue, 5%);
+$red: #fc6159;
+$orange:#fb5d38;
+$yellow: #fbba20;
+$green: #25b869;
+$brown: #545454;
+$grayedOut: #d7d6d6;
+// $radialGradient: radial-gradient(circle, $lightBlue, $blue);
+$linearGradient: linear-gradient($blue, $lightBlue);
+
+// font
+$font: Helvetica,
+Arial,
+sans-serif;
+
+// other
+$radius: 3px;
+$shadow: rgba(0, 9, 128, 0.05);
